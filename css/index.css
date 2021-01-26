@@ -1,0 +1,352 @@
+*,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+}
+
+body {
+    padding-top: 53px;
+}
+
+
+/*////////////////////////////////////// navbar //////////////////////////////////////*/
+
+#myNav {
+    display: flex;
+    background-color: #74b9ff;
+    padding: 7px 0px;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    top: 0px;
+}
+
+#openBtn {
+    font-size: 28px;
+    position: absolute;
+    right: 16px;
+    cursor: pointer;
+    transition: color 0.2s;
+}
+
+#openBtn:hover {
+    color: white;
+}
+
+#myNav #title {
+    margin-left: 15px;
+}
+
+#myNav #title a {
+    text-decoration: none;
+    color: black;
+}
+
+.modalMenu {
+    background-color: rgba(0, 0, 0, 0.719);
+    position: fixed;
+    bottom: 0px;
+    top: 0px;
+    right: 0px;
+    width: 0vw;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.modalMenu #closeBtn {
+    font-size: 29px;
+    position: absolute;
+    right: 16px;
+    cursor: pointer;
+    color: white;
+    transition: color 0.2s;
+    top: 12px;
+}
+
+.animateOpen {
+    animation: open 0.5s forwards;
+}
+
+@keyframes open {
+    0% {
+        width: 0vw;
+    }
+    100% {
+        width: 100vw;
+    }
+}
+
+.animateClose {
+    animation: close 0.5s forwards;
+}
+
+@keyframes close {
+    0% {
+        width: 100vw;
+    }
+    100% {
+        width: 0vw;
+    }
+}
+
+#closeBtn:hover {
+    color: red;
+}
+
+.navLinks {
+    padding: 0px;
+    margin: 0px;
+    position: absolute;
+    list-style: none;
+}
+
+.navLinks li a {
+    text-decoration: none;
+    text-align: center;
+    display: block;
+    font-size: 50px;
+    padding-bottom: 10px;
+    color: white;
+    white-space: nowrap !important;
+    transition: all 0.5s;
+}
+
+.navLinks li a:hover {
+    color: red;
+}
+
+.slider {
+    width: 0%;
+    height: 6px;
+    display: block;
+    background-color: red;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.animateSlider {
+    animation: slide 0.7s forwards;
+}
+
+@keyframes slide {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 140%;
+    }
+}
+
+
+/*/////////////////////////////////////// welcome div  ///////////////////////////////////////*/
+
+#welcomeCon {
+    background-image: url("https://www.transparenttextures.com/patterns/gradient-squares.png");
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 35px;
+}
+
+.letters {
+    /* font-size: 28rem; */
+    font-size: 20vw;
+    opacity: 0;
+}
+
+.animateShow {
+    animation: showLetter 0.3s forwards;
+}
+
+@keyframes showLetter {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+#welcomeText {
+    font-size: 3rem;
+    /* font-size: 5vw; */
+    text-align: center;
+    padding: 0 5px;
+}
+
+.avatar {
+    margin-top: 50px;
+    max-width: 100%;
+}
+
+
+/*///////////////////////////////////////// about me /////////////////////////// */
+
+.aboutMe {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 100px 15px;
+    background-color: #6c5ce7;
+    color: white;
+    text-align: center;
+}
+
+.aboutMe p {
+    font-size: 2rem;
+    margin-top: 15px;
+}
+
+
+/*//////////////////////////////////////// skills /////////////////////*/
+
+.skillsCont {
+    background-color: #a29bfe;
+    padding: 50px 0;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.skillsCont h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.skills {
+    box-shadow: 0px 0px 15px 5px rgba(0, 0, 0, 0.329);
+    width: 80%;
+    padding: 25px;
+    border-radius: 70px;
+}
+
+.skill {
+    margin-bottom: 20px;
+}
+
+.skill h4 {
+    margin-bottom: 10px;
+    padding-left: 15px;
+}
+
+.outerBar {
+    width: 100%;
+    background-color: aqua;
+    height: 50px;
+    border-radius: 40px;
+    overflow: hidden;
+}
+
+.innerBar {
+    height: 100%;
+    background-color: black;
+    border-radius: 40px;
+    width: 0%;
+    transition: width 1s;
+}
+
+
+/*
+.skill.c .innerBar {
+     width: 61%;
+}
+
+.skill.cplusplus .innerBar {
+    width: 71%;
+}
+
+.skill.java .innerBar {
+    width: 64%;
+}
+
+.skill.javascript .innerBar {
+    width: 71%;
+}
+
+.skill.html .innerBar {
+    width: 81%;
+}
+
+.skill.css .innerBar {
+    width: 81%;
+}
+
+.skill.react .innerBar {
+    width: 51%;
+}
+
+.skill.node .innerBar {
+    width: 55%;
+}
+
+.skill.express .innerBar {
+    width: 55%;
+}
+
+.skill.php .innerBar {
+    width: 70%;
+}
+
+.skill.sql .innerBar {
+    width: 88%;
+}
+
+.skill.mongodb .innerBar {
+    width: 84%;
+} */
+
+
+/*///////////////////////// footer ////////////////////////////// */
+
+footer {
+    padding: 70px 0;
+    background-image: url("https://www.transparenttextures.com/patterns/gradient-squares.png");
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer h1 {
+    text-align: center;
+}
+
+.socialBtns {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 20px 0px;
+}
+
+.socialBtns a {
+    font-size: 30px;
+    margin-right: 25px;
+    text-decoration: none;
+    color: white;
+    background-color: #6c5ce7;
+    padding: 10px;
+    border-radius: 50%;
+    transition: 0.3s all;
+    border: 1px solid #6c5ce7;
+}
+
+.socialBtns a:hover {
+    color: #6c5ce7;
+    background-color: white;
+    border: 1px solid #6c5ce7;
+}

@@ -351,3 +351,7 @@ footer h1 {
     background-color: white;
     border: 1px solid #6c5ce7;
 }
+
+footer p {
+    text-align: center;
+}

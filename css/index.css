@@ -232,7 +232,7 @@ body {
 
 .skills {
     box-shadow: 0px 0px 15px 5px rgba(0, 0, 0, 0.329);
-    width: 80%;
+    width: 90%;
     padding: 25px;
     border-radius: 70px;
 }
@@ -330,6 +330,7 @@ footer h1 {
 .socialBtns {
     display: flex;
     justify-content: space-evenly;
+    align-items: center;
     padding: 20px 0px;
 }
 

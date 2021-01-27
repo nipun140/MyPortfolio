@@ -142,6 +142,7 @@ body {
     background-color: red;
     position: absolute;
     left: 50%;
+    border-radius: 20px;
     transform: translate(-50%);
 }
 
@@ -175,8 +176,8 @@ body {
 
 .eye {
     position: absolute;
-    width: 3.2vw;
-    height: 3.2vw;
+    width: 3.5vw;
+    height: 3.5vw;
     border-radius: 50%;
 }
 
@@ -245,6 +246,16 @@ body {
     opacity: 0;
 }
 
+@media (max-width:450px) {
+    .letters {
+        font-size: 26vw;
+    }
+    .eye {
+        width: 5vw;
+        height: 5vw;
+    }
+}
+
 .animateShow {
     animation: showLetter 0.3s forwards;
 }
@@ -277,15 +288,21 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 100px 15px;
+    padding: 125px 15px;
     background-color: #6c5ce7;
     color: white;
     text-align: center;
 }
 
 .aboutMe p {
-    font-size: 2rem;
+    font-size: 2.5rem;
     margin-top: 15px;
+    letter-spacing: 1.2px;
+    line-height: 4rem;
+}
+
+.aboutMe h1 {
+    margin-bottom: 25px;
 }
 
 
@@ -302,7 +319,7 @@ body {
 
 .skillsCont h1 {
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 50px;
 }
 
 .skills {
@@ -336,56 +353,6 @@ body {
     width: 0%;
     transition: width 1s;
 }
-
-
-/*
-.skill.c .innerBar {
-     width: 61%;
-}
-
-.skill.cplusplus .innerBar {
-    width: 71%;
-}
-
-.skill.java .innerBar {
-    width: 64%;
-}
-
-.skill.javascript .innerBar {
-    width: 71%;
-}
-
-.skill.html .innerBar {
-    width: 81%;
-}
-
-.skill.css .innerBar {
-    width: 81%;
-}
-
-.skill.react .innerBar {
-    width: 51%;
-}
-
-.skill.node .innerBar {
-    width: 55%;
-}
-
-.skill.express .innerBar {
-    width: 55%;
-}
-
-.skill.php .innerBar {
-    width: 70%;
-}
-
-.skill.sql .innerBar {
-    width: 88%;
-}
-
-.skill.mongodb .innerBar {
-    width: 84%;
-} */
 
 
 /*///////////////////////// footer ////////////////////////////// */

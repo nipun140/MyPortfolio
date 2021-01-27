@@ -38,7 +38,14 @@ body::before {
 
 .projectSvg {
     margin-top: 50px;
-    max-width: 100%;
+    width: 40%;
+    margin-right: 7px;
+}
+
+@media (max-width:550px) {
+    .projectSvg {
+        width: 70%;
+    }
 }
 
 #welcomeText {
@@ -59,7 +66,8 @@ body::before {
 #projectCon {
     overflow: hidden;
     position: relative;
-    padding: 40px 15px;
+    padding: 10px 15px;
+    padding-bottom: 0px;
 }
 
 .itemCon {
@@ -140,7 +148,8 @@ body::before {
 }
 
 .projectLink:hover {
-    letter-spacing: 2px;
+    letter-spacing: 3px;
+    color: red !important;
 }
 
 .circle {

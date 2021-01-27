@@ -8,19 +8,19 @@ var letterE2 = document.querySelector('#resume .letters.E2')
 
 setTimeout(() => {
     letterR.classList.add('animateShow')
-}, 600)
+}, 400)
 setTimeout(() => {
     letterE1.classList.add('animateShow')
-}, 800)
+}, 600)
 setTimeout(() => {
     letterS.classList.add('animateShow')
-}, 1000)
+}, 800)
 setTimeout(() => {
     letterU.classList.add('animateShow')
-}, 1200)
+}, 1000)
 setTimeout(() => {
     letterM.classList.add('animateShow')
-}, 1400)
+}, 1200)
 setTimeout(() => {
     letterE2.classList.add('animateShow')
-}, 1600)
+}, 1400)

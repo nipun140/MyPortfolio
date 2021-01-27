@@ -76,48 +76,47 @@ const skillsId = document.querySelector('.skills');
 const skillc = document.querySelector('.skill.c .innerBar');
 
 skillsId.addEventListener('transitionend', () => {
-        showPerc();
-    })
-    // if (skillsId.style.opacity == '1') {
-    //     console.log('called')
-    //     showPerc();
-    // }
+    showPerc();
+})
 
 function showPerc() {
     setTimeout(() => {
         skillc.style.width = '61%'
-    }, 600)
+    }, 200)
     setTimeout(() => {
         document.querySelector('.skill.cplusplus .innerBar').style.width = '61%'
-    }, 700)
+    }, 300)
     setTimeout(() => {
         document.querySelector('.skill.java .innerBar').style.width = '71%'
-    }, 800)
+    }, 400)
     setTimeout(() => {
-        document.querySelector('.skill.javascript .innerBar').style.width = '64%'
-    }, 900)
+        document.querySelector('.skill.javascript .innerBar').style.width = '69%'
+    }, 500)
     setTimeout(() => {
         document.querySelector('.skill.html .innerBar').style.width = '84%'
-    }, 1000)
+    }, 600)
     setTimeout(() => {
         document.querySelector('.skill.css .innerBar').style.width = '80%'
-    }, 1100)
+    }, 700)
     setTimeout(() => {
         document.querySelector('.skill.react .innerBar').style.width = '51%'
-    }, 1200)
+    }, 800)
     setTimeout(() => {
-        document.querySelector('.skill.node .innerBar').style.width = '55%'
-    }, 1300)
+        document.querySelector('.skill.node .innerBar').style.width = '65%'
+    }, 900)
     setTimeout(() => {
-        document.querySelector('.skill.express .innerBar').style.width = '55%'
-    }, 1400)
+        document.querySelector('.skill.express .innerBar').style.width = '65%'
+    }, 1000)
     setTimeout(() => {
         document.querySelector('.skill.php .innerBar').style.width = '70%'
-    }, 1500)
+    }, 1100)
     setTimeout(() => {
         document.querySelector('.skill.sql .innerBar').style.width = '88%'
-    }, 1600)
+    }, 1200)
     setTimeout(() => {
         document.querySelector('.skill.mongodb .innerBar').style.width = '84%'
-    }, 1700)
+    }, 1300)
+    setTimeout(() => {
+        document.querySelector('.skill.bootstrap .innerBar').style.width = '80%'
+    }, 1400)
 }

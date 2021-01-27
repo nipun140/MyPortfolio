@@ -1,0 +1,26 @@
+/* welcomeCon  */
+
+#welcomeCon {
+    padding-top: 100px;
+}
+
+.word .letters {
+    font-size: 10vw;
+}
+
+
+/* resume cont  */
+
+#certificateCont {
+    margin: 30px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#certificateCont img {
+    max-width: 80%;
+    margin-bottom: 15px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.411);
+}

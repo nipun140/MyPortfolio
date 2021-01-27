@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <!-- fontawesome 5/4  -->
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <!-- AOS  -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!--External stylesheet  -->
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/projects.css">
+    <link rel="stylesheet" href="css/resume.css">
+</head>
+
+<body>
+
+    <!-- navbar  -->
+    <nav id="myNav">
+        <a href="index.html"><img id="logo" src="images/NG.png" alt="logo" /></a>
+        <h1 id="title">Portfolio</h1>
+        <span id="openBtn" class="fa fa-bars"></span>
+
+        <div class="modalMenu">
+            <span id="closeBtn" class="fa fa-close"></span>
+            <ul class="navLinks">
+                <li><a href="resume.html">Resume<span class="slider first"></span></a></li>
+                <li><a href="projects.html">Projects<span class="slider second"></span></a></li>
+                <li><a href="certificates.html">Certification<span class="slider third"></span></a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- welcome div  -->
+
+    <div id="welcomeCon" class="container-fluid">
+        <div id="resume" class="word">
+            <span class="letters R">R</span>
+            <span class="letters E1">E</span>
+            <span class="letters S">S</span>
+            <span class="letters U">U</span>
+            <span class="letters M">M</span>
+            <span class="letters E2">E</span>
+        </div>
+    </div>
+
+    <!-- resume  -->
+    <div id="resumeCont" class="container">
+        <img data-aos="fade-up" src="images/res1.png" alt="resumepic" />
+        <img data-aos="fade-up" src="images/res2.png" alt="resumepic" />
+        <img data-aos="fade-up" src="images/res3.png" alt="resumepic" />
+    </div>
+
+
+    <!-- footer  -->
+    <footer>
+        <div class="container-fluid">
+            <h1>Living, learning, & leveling up<br> one day at a time.</h1>
+            <div class="socialBtns">
+                <a href="#" class="fab fa-facebook-f"></a>
+                <a href="#" class="fab fa-snapchat-ghost"></a>
+                <a href="#" class="	fab fa-instagram"></a>
+                <a href="#" class="	fa fa-envelope"></a>
+                <a style="margin: 0" href="#" class="fas fa-phone-alt"></a>
+            </div>
+            <p><span class="far fa-copyright"></span> 2021 by Nipun Gupta. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- AOS script  -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 800,
+        });
+    </script>
+    <!-- js script  -->
+    <script src="js/index.js"></script>
+    <script src="js/projects.js"></script>
+    <script src="js/resume.js"></script>
+</body>
+
+</html>

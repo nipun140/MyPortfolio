@@ -14,7 +14,10 @@ function showSlides() {
     }, 500)
     setTimeout(() => {
         secondSlider.classList.add('animateSlider')
-    }, 600)
+    }, 700)
+    setTimeout(() => {
+        thirdSlider.classList.add('animateSlider')
+    }, 900)
 }
 
 openBtn.addEventListener('click', () => {
@@ -38,11 +41,11 @@ closeBtn.addEventListener('click', () => {
 })
 
 ///////////////////////////////////////////////// welcome div//////////////////////////////////////
-letterH = document.querySelector('.letters.one')
-letterE = document.querySelector('.letters.two')
-letterL1 = document.querySelector('.letters.three')
-letterL2 = document.querySelector('.letters.four')
-letterO = document.querySelector('.letters.five')
+var letterH = document.querySelector('.letters.one')
+var letterE = document.querySelector('.letters.two')
+var letterL1 = document.querySelector('.letters.three')
+var letterL2 = document.querySelector('.letters.four')
+var letterO = document.querySelector('.letters.five')
 
 setTimeout(() => {
     letterH.classList.add('animateShow')

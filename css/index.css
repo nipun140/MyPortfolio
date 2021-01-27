@@ -182,46 +182,60 @@ body {
 
 .eye.one {
     top: 50%;
-    left: 31%;
+    left: 51%;
     transform: translate(-50%, -50%);
-    animation: moveEyeOne 1s infinite;
     background-color: #74b9ff;
+}
+
+.eyeOneAnim {
+    animation: moveEyeOne 1s linear infinite;
 }
 
 @keyframes moveEyeOne {
     0% {
+        left: 51%;
+        background-color: #74b9ff;
+    }
+    25% {
         left: 31%;
         background-color: #74b9ff;
     }
-    50% {
+    75% {
         left: 69%;
         background-color: #a29bfe;
     }
     100% {
-        left: 31%;
+        left: 51%;
         background-color: #74b9ff;
     }
 }
 
 .eye.two {
-    top: 31%;
+    top: 50%;
     left: 51%;
     transform: translate(-50%, -50%);
     background-color: #6c5ce7;
-    animation: moveEyeTwo 0.8s infinite;
+}
+
+.eyeTwoAnim {
+    animation: moveEyeTwo 1s linear infinite;
 }
 
 @keyframes moveEyeTwo {
     0% {
+        top: 50%;
+        background-color: #6c5ce7;
+    }
+    25% {
         top: 31%;
         background-color: #6c5ce7;
     }
-    50% {
+    75% {
         top: 68%;
         background-color: #a29bfe;
     }
     100% {
-        top: 31%;
+        top: 50%;
         background-color: #6c5ce7;
     }
 }

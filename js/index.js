@@ -59,6 +59,13 @@ setTimeout(() => {
 setTimeout(() => {
     letterO.classList.add('animateShow')
 }, 1400)
+setTimeout(() => {
+    document.querySelector('.eye.one').classList.add('eyeOneAnim');
+}, 1800)
+setTimeout(() => {
+    document.querySelector('.eye.two').classList.add('eyeTwoAnim');
+}, 2100)
+
 
 //////////////////////////////////////////////// skills //////////////////////////////////////////
 const skillsCont = document.querySelector('.skillsCont');

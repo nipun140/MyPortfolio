@@ -359,6 +359,7 @@ body {
 
 footer {
     padding: 70px 0;
+    padding-bottom: 4px;
     background-image: url("https://www.transparenttextures.com/patterns/gradient-squares.png");
     display: flex;
     flex-direction: column;
@@ -396,4 +397,20 @@ footer h1 {
 
 footer p {
     text-align: center;
+}
+
+#up {
+    background-color: #6c5ce7;
+    margin: 5px;
+    padding: 5px 15px;
+    font-size: 30px;
+    border-radius: 50%;
+    cursor: pointer;
+    position: relative;
+    transition: all 0.5s;
+}
+
+#up:hover {
+    transform: translateY(-7px);
+    color: white;
 }

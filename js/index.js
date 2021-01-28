@@ -4,6 +4,7 @@ const closeBtn = document.querySelector('#closeBtn');
 const firstSlider = document.querySelector('.slider.first');
 const secondSlider = document.querySelector('.slider.second');
 const thirdSlider = document.querySelector('.slider.third');
+const fourthSlider = document.querySelector('.slider.fourth');
 const sliders = document.querySelectorAll('.slider');
 const modalMenu = document.querySelector('.modalMenu');
 
@@ -18,6 +19,9 @@ function showSlides() {
     setTimeout(() => {
         thirdSlider.classList.add('animateSlider')
     }, 900)
+    setTimeout(() => {
+        fourthSlider.classList.add('animateSlider')
+    }, 1100)
 }
 
 openBtn.addEventListener('click', () => {

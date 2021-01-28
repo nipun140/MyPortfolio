@@ -64,10 +64,10 @@ setTimeout(() => {
 }, 1400)
 setTimeout(() => {
     document.querySelector('.eye.one').classList.add('eyeOneAnim');
-}, 1800)
+}, 2100)
 setTimeout(() => {
     document.querySelector('.eye.two').classList.add('eyeTwoAnim');
-}, 2100)
+}, 2400)
 
 
 //////////////////////////////////////////////// skills //////////////////////////////////////////

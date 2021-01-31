@@ -91,10 +91,10 @@ function showPerc() {
         document.querySelector('.skill.cplusplus .innerBar').style.width = '61%'
     }, 300)
     setTimeout(() => {
-        document.querySelector('.skill.java .innerBar').style.width = '71%'
+        document.querySelector('.skill.java .innerBar').style.width = '67%'
     }, 400)
     setTimeout(() => {
-        document.querySelector('.skill.javascript .innerBar').style.width = '69%'
+        document.querySelector('.skill.javascript .innerBar').style.width = '75%'
     }, 500)
     setTimeout(() => {
         document.querySelector('.skill.html .innerBar').style.width = '84%'

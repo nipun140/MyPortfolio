@@ -256,6 +256,16 @@ body {
     }
 }
 
+@media (max-width:320px) {
+    .letters {
+        font-size: 24vw;
+    }
+    .eye {
+        width: 4.5vw;
+        height: 4.5vw;
+    }
+}
+
 .animateShow {
     animation: showLetter 0.3s forwards;
 }
@@ -388,7 +398,6 @@ footer h1 {
 
 .socialBtns a {
     font-size: 30px;
-    margin-right: 25px;
     text-decoration: none;
     color: white;
     background-color: #6c5ce7;

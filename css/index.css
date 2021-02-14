@@ -6,429 +6,425 @@ h4,
 h5,
 h6,
 p {
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
 }
 
 html {
-    font-size: 10px;
+  font-size: 10px;
+  scroll-behavior: smooth !important;
 }
 
 body {
-    padding-top: 53px;
+  padding-top: 53px;
 }
-
 
 /*////////////////////////////////////// navbar //////////////////////////////////////*/
 
 #myNav {
-    display: flex;
-    background-color: #74b9ff;
-    padding: 7px 0px;
-    align-items: center;
-    position: fixed;
-    width: 100%;
-    z-index: 2;
-    top: 0px;
+  display: flex;
+  background-color: #74b9ff;
+  padding: 7px 0px;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  z-index: 2;
+  top: 0px;
 }
 
 #logo {
-    width: 50px;
-    margin-left: 10px;
+  width: 50px;
+  margin-left: 10px;
 }
 
 #openBtn {
-    font-size: 28px;
-    position: absolute;
-    right: 16px;
-    cursor: pointer;
-    transition: color 0.2s;
+  font-size: 28px;
+  position: absolute;
+  right: 16px;
+  cursor: pointer;
+  transition: color 0.2s;
 }
 
 #openBtn:hover {
-    color: white;
+  color: white;
 }
 
 #myNav #title {
-    margin-left: 5px;
+  margin-left: 5px;
 }
 
 #myNav #title a {
-    text-decoration: none;
-    color: black;
+  text-decoration: none;
+  color: black;
 }
 
 .modalMenu {
-    background-color: rgba(0, 0, 0, 0.821);
-    position: fixed;
-    bottom: 0px;
-    top: 0px;
-    right: 0px;
-    width: 0vw;
-    z-index: 2;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
+  background-color: rgba(0, 0, 0, 0.821);
+  position: fixed;
+  bottom: 0px;
+  top: 0px;
+  right: 0px;
+  width: 0vw;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
 }
 
 .modalMenu #closeBtn {
-    font-size: 29px;
-    position: absolute;
-    right: 16px;
-    cursor: pointer;
-    color: white;
-    transition: color 0.2s;
-    top: 12px;
+  font-size: 29px;
+  position: absolute;
+  right: 16px;
+  cursor: pointer;
+  color: white;
+  transition: color 0.2s;
+  top: 12px;
 }
 
 .animateOpen {
-    animation: open 0.5s forwards;
+  animation: open 0.5s forwards;
 }
 
 @keyframes open {
-    0% {
-        width: 0vw;
-    }
-    100% {
-        width: 100vw;
-    }
+  0% {
+    width: 0vw;
+  }
+  100% {
+    width: 100vw;
+  }
 }
 
 .animateClose {
-    animation: close 0.5s forwards;
+  animation: close 0.5s forwards;
 }
 
 @keyframes close {
-    0% {
-        width: 100vw;
-    }
-    100% {
-        width: 0vw;
-    }
+  0% {
+    width: 100vw;
+  }
+  100% {
+    width: 0vw;
+  }
 }
 
 #closeBtn:hover {
-    color: red;
+  color: red;
 }
 
 .navLinks {
-    padding: 0px;
-    margin: 0px;
-    position: absolute;
-    list-style: none;
+  padding: 0px;
+  margin: 0px;
+  position: absolute;
+  list-style: none;
 }
 
 .navLinks li a {
-    text-decoration: none;
-    text-align: center;
-    display: block;
-    font-size: 50px;
-    padding-bottom: 10px;
-    color: white;
-    white-space: nowrap !important;
-    transition: all 0.5s;
+  text-decoration: none;
+  text-align: center;
+  display: block;
+  font-size: 50px;
+  padding-bottom: 10px;
+  color: white;
+  white-space: nowrap !important;
+  transition: all 0.5s;
 }
 
 .navLinks li a:hover {
-    color: red;
+  color: red;
 }
 
 .slider {
-    width: 0%;
-    height: 6px;
-    display: block;
-    background-color: red;
-    position: absolute;
-    left: 50%;
-    border-radius: 20px;
-    transform: translate(-50%);
+  width: 0%;
+  height: 6px;
+  display: block;
+  background-color: red;
+  position: absolute;
+  left: 50%;
+  border-radius: 20px;
+  transform: translate(-50%);
 }
 
 .animateSlider {
-    animation: slide 0.7s forwards;
+  animation: slide 0.7s forwards;
 }
 
 @keyframes slide {
-    0% {
-        width: 0%;
-    }
-    100% {
-        width: 140%;
-    }
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 140%;
+  }
 }
-
 
 /*/////////////////////////////////////// welcome div  ///////////////////////////////////////*/
 
 #welcomeCon {
-    background-image: url("https://www.transparenttextures.com/patterns/gradient-squares.png");
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-top: 35px;
+  background-image: url("https://www.transparenttextures.com/patterns/gradient-squares.png");
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 35px;
 }
 
 .five {
-    position: relative;
+  position: relative;
 }
 
 .eye {
-    position: absolute;
-    width: 3.5vw;
-    height: 3.5vw;
-    border-radius: 50%;
+  position: absolute;
+  width: 3.5vw;
+  height: 3.5vw;
+  border-radius: 50%;
 }
 
 .eye.one {
-    top: 50%;
-    left: 51%;
-    transform: translate(-50%, -50%);
-    background-color: #74b9ff;
+  top: 50%;
+  left: 51%;
+  transform: translate(-50%, -50%);
+  background-color: #74b9ff;
 }
 
 .eyeOneAnim {
-    animation: moveEyeOne 1s linear infinite;
+  animation: moveEyeOne 1s linear infinite;
 }
 
 @keyframes moveEyeOne {
-    0% {
-        left: 51%;
-        background-color: #74b9ff;
-    }
-    25% {
-        left: 31%;
-        background-color: #74b9ff;
-    }
-    75% {
-        left: 69%;
-        background-color: #a29bfe;
-    }
-    100% {
-        left: 51%;
-        background-color: #74b9ff;
-    }
+  0% {
+    left: 51%;
+    background-color: #74b9ff;
+  }
+  25% {
+    left: 31%;
+    background-color: #74b9ff;
+  }
+  75% {
+    left: 69%;
+    background-color: #a29bfe;
+  }
+  100% {
+    left: 51%;
+    background-color: #74b9ff;
+  }
 }
 
 .eye.two {
-    top: 50%;
-    left: 51%;
-    transform: translate(-50%, -50%);
-    background-color: #6c5ce7;
+  top: 50%;
+  left: 51%;
+  transform: translate(-50%, -50%);
+  background-color: #6c5ce7;
 }
 
 .eyeTwoAnim {
-    animation: moveEyeTwo 1s linear infinite;
+  animation: moveEyeTwo 1s linear infinite;
 }
 
 @keyframes moveEyeTwo {
-    0% {
-        top: 50%;
-        background-color: #6c5ce7;
-    }
-    25% {
-        top: 31%;
-        background-color: #6c5ce7;
-    }
-    75% {
-        top: 68%;
-        background-color: #a29bfe;
-    }
-    100% {
-        top: 50%;
-        background-color: #6c5ce7;
-    }
+  0% {
+    top: 50%;
+    background-color: #6c5ce7;
+  }
+  25% {
+    top: 31%;
+    background-color: #6c5ce7;
+  }
+  75% {
+    top: 68%;
+    background-color: #a29bfe;
+  }
+  100% {
+    top: 50%;
+    background-color: #6c5ce7;
+  }
 }
 
 .letters {
-    font-size: 20vw;
-    opacity: 0;
+  font-size: 20vw;
+  opacity: 0;
 }
 
-@media (max-width:450px) {
-    .letters {
-        font-size: 26vw;
-    }
-    .eye {
-        width: 4.9vw;
-        height: 4.9vw;
-    }
+@media (max-width: 450px) {
+  .letters {
+    font-size: 26vw;
+  }
+  .eye {
+    width: 4.9vw;
+    height: 4.9vw;
+  }
 }
 
-@media (max-width:320px) {
-    .letters {
-        font-size: 24vw;
-    }
-    .eye {
-        width: 4.5vw;
-        height: 4.5vw;
-    }
+@media (max-width: 320px) {
+  .letters {
+    font-size: 24vw;
+  }
+  .eye {
+    width: 4.5vw;
+    height: 4.5vw;
+  }
 }
 
 .animateShow {
-    animation: showLetter 0.3s forwards;
+  animation: showLetter 0.3s forwards;
 }
 
 @keyframes showLetter {
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 #welcomeText {
-    font-size: 3rem;
-    /* font-size: 5vw; */
-    text-align: center;
-    padding: 0 5px;
+  font-size: 3rem;
+  /* font-size: 5vw; */
+  text-align: center;
+  padding: 0 5px;
 }
 
 .avatar {
-    margin-top: 50px;
-    max-width: 100%;
+  margin-top: 50px;
+  max-width: 100%;
 }
 
 .myImage .shadow {
-    margin-top: 10px;
-    background-color: rgba(0, 0, 0, 0.411);
-    width: 100%;
-    height: 20px;
-    border-radius: 50%;
-    filter: blur(3px);
+  margin-top: 10px;
+  background-color: rgba(0, 0, 0, 0.411);
+  width: 100%;
+  height: 20px;
+  border-radius: 50%;
+  filter: blur(3px);
 }
-
 
 /*///////////////////////////////////////// about me /////////////////////////// */
 
 .aboutMe {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 125px 15px;
-    background-color: #6c5ce7;
-    color: white;
-    text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 125px 15px;
+  background-color: #6c5ce7;
+  color: white;
+  text-align: center;
 }
 
 .aboutMe p {
-    font-size: 2.5rem;
-    margin-top: 15px;
-    letter-spacing: 1.2px;
-    line-height: 4rem;
+  font-size: 2.5rem;
+  margin-top: 15px;
+  letter-spacing: 1.2px;
+  line-height: 4rem;
 }
 
 .aboutMe h1 {
-    margin-bottom: 25px;
+  margin-bottom: 25px;
 }
-
 
 /*//////////////////////////////////////// skills /////////////////////*/
 
 .skillsCont {
-    background-color: #a29bfe;
-    padding: 50px 0;
-    color: white;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  background-color: #a29bfe;
+  padding: 50px 0;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .skillsCont h1 {
-    text-align: center;
-    margin-bottom: 50px;
+  text-align: center;
+  margin-bottom: 50px;
 }
 
 .skills {
-    box-shadow: 0px 0px 15px 5px rgba(0, 0, 0, 0.329);
-    width: 90%;
-    padding: 25px;
-    border-radius: 70px;
+  box-shadow: 0px 0px 15px 5px rgba(0, 0, 0, 0.329);
+  width: 90%;
+  padding: 25px;
+  border-radius: 70px;
 }
 
 .skill {
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 .skill h4 {
-    margin-bottom: 10px;
-    padding-left: 15px;
+  margin-bottom: 10px;
+  padding-left: 15px;
 }
 
 .outerBar {
-    width: 100%;
-    background-color: aqua;
-    height: 50px;
-    border-radius: 40px;
-    overflow: hidden;
+  width: 100%;
+  background-color: aqua;
+  height: 50px;
+  border-radius: 40px;
+  overflow: hidden;
 }
 
 .innerBar {
-    height: 100%;
-    background-color: black;
-    border-radius: 40px;
-    width: 0%;
-    transition: width 1s;
+  height: 100%;
+  background-color: black;
+  border-radius: 40px;
+  width: 0%;
+  transition: width 1s;
 }
-
 
 /*///////////////////////// footer ////////////////////////////// */
 
 footer {
-    padding: 70px 0;
-    padding-bottom: 4px;
-    background-image: url("https://www.transparenttextures.com/patterns/gradient-squares.png");
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  padding: 70px 0;
+  padding-bottom: 4px;
+  background-image: url("https://www.transparenttextures.com/patterns/gradient-squares.png");
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 footer h1 {
-    text-align: center;
+  text-align: center;
 }
 
 .socialBtns {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    padding: 20px 0px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 20px 0px;
 }
 
 .socialBtns a {
-    font-size: 30px;
-    text-decoration: none;
-    color: white;
-    background-color: #6c5ce7;
-    padding: 10px;
-    border-radius: 50%;
-    transition: 0.3s all;
-    border: 1px solid #6c5ce7;
+  font-size: 30px;
+  text-decoration: none;
+  color: white;
+  background-color: #6c5ce7;
+  padding: 10px;
+  border-radius: 50%;
+  transition: 0.3s all;
+  border: 1px solid #6c5ce7;
 }
 
 .socialBtns a:hover {
-    color: #6c5ce7;
-    background-color: white;
-    border: 1px solid #6c5ce7;
+  color: #6c5ce7;
+  background-color: white;
+  border: 1px solid #6c5ce7;
 }
 
 footer p {
-    text-align: center;
+  text-align: center;
 }
 
 #up {
-    background-color: #6c5ce7;
-    margin: 5px;
-    padding: 5px 15px;
-    font-size: 30px;
-    border-radius: 50%;
-    cursor: pointer;
-    position: relative;
-    transition: all 0.5s;
+  background-color: #6c5ce7;
+  margin: 5px;
+  padding: 5px 15px;
+  font-size: 30px;
+  border-radius: 50%;
+  cursor: pointer;
+  position: relative;
+  transition: all 0.5s;
 }
 
 #up:hover {
-    transform: translateY(-7px);
-    color: white;
+  transform: translateY(-7px);
+  color: white;
 }

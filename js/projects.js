@@ -45,7 +45,7 @@ letterS.addEventListener("webkitAnimationEnd", () => {
 function increaseCount() {
   count++;
   if (count == 20) {
-    document.getElementById("countSpan").innerHTML = "15+";
+    document.getElementById("countSpan").innerHTML = "20+";
     clearInterval(intervalId);
   } else {
     document.getElementById("countSpan").innerHTML = " " + count;

@@ -40,6 +40,7 @@
                 <li><a href="resume.html">Resume<span class="slider second"></span></a></li>
                 <li><a href="projects.html">Projects<span class="slider third"></span></a></li>
                 <li><a href="certificates.html">Certification<span class="slider fourth"></span></a></li>
+                <li><a href="contacts.html">Contact<span class="slider fifth"></span></a></li>
             </ul>
         </div>
     </nav>
@@ -56,6 +57,8 @@
                 <div class="eye two"></div>
             </span>
         </div>
+
+        <div class="dynamic-typing"><span id="one"></span></div>
         <p id="welcomeText">I design and code beautifully simple things, and I love what I do.</p>
         <div data-aos="zoom-in-left" class="myImage">
             <img class="avatar" src="images/avatar.svg" />
@@ -183,7 +186,17 @@
             duration: 950,
         });
     </script>
+
+    <!-- i-type script  -->
+    <script src="https://unpkg.com/ityped@1.0.2"></script>
+    <script>
+        const oneElement = document.querySelector('#one')
+
+        window.ityped.init(oneElement, { loop: true, strings: ['Tech enthusiast .', 'Learner .', 'Programmer .'], typeSpeed: 100, backSpeed: 50, });
+    </script>
+
     <!-- js script  -->
+    <script src="js/navbar.js"></script>
     <script src="js/index.js"></script>
 </body>
 

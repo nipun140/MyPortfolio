@@ -155,7 +155,7 @@ body {
     width: 0%;
   }
   100% {
-    width: 140%;
+    width: 100%;
   }
 }
 
@@ -297,6 +297,45 @@ body {
   height: 20px;
   border-radius: 50%;
   filter: blur(3px);
+}
+
+/* i-type  */
+
+.dynamic-typing {
+  font-size: 3rem;
+  background-color: black;
+  border-radius: 0.7rem;
+  border: 2px solid white;
+  color: white;
+  padding: 0.2rem 0.4rem;
+  margin-bottom: 1rem;
+}
+
+.ityped-cursor {
+  font-size: 3rem;
+  opacity: 1;
+  -webkit-animation: blink 0.3s infinite;
+  -moz-animation: blink 0.3s infinite;
+  animation: blink 0.3s infinite;
+  animation-direction: alternate;
+}
+
+@keyframes blink {
+  100% {
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes blink {
+  100% {
+    opacity: 0;
+  }
+}
+
+@-moz-keyframes blink {
+  100% {
+    opacity: 0;
+  }
 }
 
 /*///////////////////////////////////////// about me /////////////////////////// */

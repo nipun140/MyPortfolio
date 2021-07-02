@@ -19,12 +19,12 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <!-- Latest compiled JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-    <!-- AOS  -->
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <!--External stylesheet  -->
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/projects.css">
     <link rel="stylesheet" href="css/resume.css">
+    <link rel="stylesheet" href="css/certificates.css">
+    <link rel="stylesheet" href="css/contact.css">
 </head>
 
 <body>
@@ -50,21 +50,45 @@
     <!-- welcome div  -->
 
     <div id="welcomeCon" class="container-fluid">
-        <div id="resume" class="word">
-            <span class="letters R">R</span>
-            <span class="letters E1">E</span>
-            <span class="letters S">S</span>
-            <span class="letters U">U</span>
-            <span class="letters M">M</span>
-            <span class="letters E2">E</span>
+        <div id="contact" class="word">
+            <span class="letters C1">C</span>
+            <span class="letters O">O</span>
+            <span class="letters N">N</span>
+            <span class="letters T1">T</span>
+            <span class="letters A">A</span>
+            <span class="letters C2">C</span>
+            <span class="letters T2">T</span>
         </div>
     </div>
 
-    <!-- resume  -->
-    <div id="resumeCont" class="container">
-        <img data-aos="fade-right" data-aos-delay="200" src="images/res1.png" alt="resumepic" />
-        <img data-aos="fade-left" data-aos-delay="600" src="images/res2.png" alt="resumepic" />
-        <img data-aos="fade-right" data-aos-delay="1000" src="images/res3.png" alt="resumepic" />
+    <!-- form  -->
+    <div class="container-fluid">
+        <form action="">
+            <div class="input-field">
+                <i class="fas fa-user-alt icon"></i>
+                <input class="field" type="text" name="name" placeholder="Enter your name:" autocomplete="off" />
+            </div>
+
+            <div class="input-field">
+                <i class="fas fa-phone-alt icon"></i>
+                <input class="field" type="text" name="phone" placeholder="Enter your number:" autocomplete="off" />
+            </div>
+            <div class="input-field">
+                <i class="fas fa-envelope-open icon"></i>
+                <input class="field" type="email" name="mail" placeholder="Enter your email:" autocomplete="off" />
+            </div>
+            <div class="input-field msg">
+                <i class="	fas fa-pencil-alt icon"></i>
+                <textarea class="field" name="msg" rows="10" cols="30" placeholder="Enter your message:"
+                    autocomplete="off"></textarea>
+            </div>
+            <div class="input-field msg">
+                <button id="sendBtn" type="submit">Send <i class="fa fa-send"></i> </button>
+
+            </div>
+
+
+        </form>
     </div>
 
 
@@ -78,14 +102,15 @@
                 <a target="_blank" href="mailto: nipungarg.nipun@gmail.com" class=" fa fa-envelope "></a>
                 <a style="margin: 0" target="_blank" href="tel:+919899041964" class="fa fa-phone"></a>
             </div>
-            <p><span class="fa fa-copyright"></span> 2021 by Nipun Gupta. All Rights Reserved.</p>
+            <p><span class="fa fa-copyright "></span> 2021 by Nipun Gupta. All Rights Reserved.</p>
         </div>
         <div onclick='window.scrollTo({top: 0, behavior: "smooth"});' id="up"> <span
                 class="fa fa-angle-double-up"></span> </div>
+
     </footer>
 
     <!-- AOS script  -->
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js "></script>
     <script>
         AOS.init({
             duration: 800,
@@ -93,8 +118,7 @@
     </script>
     <!-- js script  -->
     <script src="js/navbar.js"></script>
-    <!-- <script src="js/projects.js"></script> -->
-    <script src="js/resume.js"></script>
+    <script src="js/contact.js "></script>
 </body>
 
 </html>

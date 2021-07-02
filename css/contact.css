@@ -1,0 +1,94 @@
+/* form  */
+
+:root {
+  --purple: #5f27cd;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 10px;
+}
+
+.input-field {
+  position: relative;
+  width: 60%;
+  margin-bottom: 1em;
+}
+
+.icon {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 1em;
+  font-size: 1.5em;
+  transition: all 0.5s;
+}
+
+.input-field .field {
+  display: block;
+  background: transparent;
+  width: 100%;
+  padding: 1em;
+  padding-left: 3em;
+  font-size: 2em;
+  border-radius: 1em;
+  border: 0.1em solid var(--purple);
+  transition: all 0.5s;
+}
+
+.input-field .field::placeholder {
+  color: black;
+}
+
+.on-focus-icon {
+  left: 2em !important;
+  color: var(--purple);
+}
+
+.on-focus-input {
+  outline: none;
+  font-weight: bold;
+  box-shadow: 0em 0em 0.25em 0.125em var(--purple);
+}
+
+textarea {
+  resize: none;
+}
+
+.msg .icon {
+  top: 2.5em;
+}
+
+#sendBtn {
+  display: block;
+  background: transparent;
+  width: 100%;
+  padding: 1em;
+  font-weight: bold;
+  font-size: 2em;
+  border-radius: 1em;
+  border: 0.1em solid var(--purple);
+  transition: all 0.2s;
+}
+
+#sendBtn:hover {
+  background-color: var(--purple);
+  color: white;
+}
+
+@media (max-width: 600px) {
+  form {
+    font-size: 8px;
+  }
+
+  .input-field {
+    width: 100%;
+  }
+}
+@media (max-width: 300px) {
+  form {
+    font-size: 7px;
+  }
+}
